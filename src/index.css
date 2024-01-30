@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backg{
+    background: url('assets/bg-cafe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
