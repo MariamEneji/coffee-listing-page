@@ -12,13 +12,13 @@ const CoffeeCard = ({ coffee }) => {
   
 
   return (
-    <div className=" rounded-xl overflow-hidden  mb-10 text-[0.875rem">
+    <div className=" rounded-xl mb-10 text-[0.875rem">
       <div className="">
-        <div className="relative ">
-          <img className="w-full rounded-xl h-48 object-contain " src={coffee.image} alt={coffee.name} />
+        <div className="relative h-48 ">
+          <img className="rounded-xl h-full object-contain " src={coffee.image} alt={coffee.name} />
         
           {coffee.popular ?  (
-            <div className="absolute top-2 left-2 bg-newYellow px-4 py-2  rounded-full text-[0.625rem]">Popular</div>
+            <div className="absolute top-4 md:top-2 left-2 bg-newYellow px-4 py-2  rounded-full text-[0.625rem]">Popular</div>
           ) : '' }
 
         </div>
@@ -26,7 +26,7 @@ const CoffeeCard = ({ coffee }) => {
         <div className="flex justify-between py-4">
           <h1 className="text-newWhite">{coffee.name}</h1>
 
-          <div className="px-2 bg-newLightBlue rounded text-[0.75rem]">
+          <div className="px-2 bg-newLightBlue rounded items-center flex text-[0.75rem]">
             {coffee.price}
           </div>
 

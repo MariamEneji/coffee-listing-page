@@ -22,7 +22,7 @@ setAvailable(false)
 const filteredCoffeeData = available ? coffeeData?.filter((coffee) => coffee.available) : coffeeData
 
   return (
-    <div className='flex justify-center bg-newBlack font-dm  font-semibold text-[1rem]'>
+    <div className='flex justify-center bg-newBlack font-dm  font-semibold text-[1rem] tracking-wide'>
       <div className='h-[30%] w-full backg absolute'></div>
 
       <div className='z-10 mx-6 md:mx-20 my-20 px-6 md:px-10 py-20 md:py-28 bg-newGrey h-full rounded-xl flex flex-col items-center text-center '>
@@ -32,9 +32,9 @@ const filteredCoffeeData = available ? coffeeData?.filter((coffee) => coffee.ava
           expertly roasted in small batches and shipped fresh weekly.
         </p>
 
-        <div>
-          <button onClick={handleAll} className='p-4'>All Products</button>
-          <button onClick={handleAvailable}>Available now</button>
+        <div className='py-4'>
+          <button onClick={handleAll} className={!available ? 'bg-newBlue m-2 md:4 p-2 rounded-xl text-newWhite ' : 'm-2 md:m-4 p-2 text-newWhite'}>All Products</button>
+          <button onClick={handleAvailable} className={available ? 'bg-newBlue m-2 md:4 p-2 rounded-xl text-newWhite ' : 'm-2 md:m-4 p-2 text-newWhite'}>Available now</button>
         </div>
 
         {coffeeData ? (
