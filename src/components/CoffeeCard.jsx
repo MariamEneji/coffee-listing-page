@@ -18,7 +18,7 @@ const CoffeeCard = ({ coffee }) => {
           <img className="rounded-xl h-full object-contain " src={coffee.image} alt={coffee.name} />
         
           {coffee.popular ?  (
-            <div className="absolute top-4 md:top-2 left-2 bg-newYellow px-4 py-2  rounded-full text-[0.625rem]">Popular</div>
+            <div className="absolute top-2 left-2 bg-newYellow px-4 py-2  rounded-full text-[0.625rem]">Popular</div>
           ) : '' }
 
         </div>
