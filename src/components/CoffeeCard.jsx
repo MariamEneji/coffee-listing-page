@@ -12,9 +12,9 @@ const CoffeeCard = ({ coffee }) => {
   
 
   return (
-    <div className=" rounded-xl mb-10 text-[0.875rem">
+    <div className=" rounded-xl mb-10 text-[0.875rem]">
       <div className="">
-        <div className="relative h-48 ">
+        <div className="relative h-40 ">
           <img className="rounded-xl h-full object-contain " src={coffee.image} alt={coffee.name} />
         
           {coffee.popular ?  (
