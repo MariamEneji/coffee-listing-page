@@ -7,3 +7,21 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.back {
+    position: relative;
+    background: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.back::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}

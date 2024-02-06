@@ -5,13 +5,15 @@ import starfull from '../assets/Star_fill.svg'
 
 import starempty from '../assets/Star.svg'
 
-
+import { Link } from 'react-router-dom';
 
 const CoffeeCard = ({ coffee }) => {
 
   
 
   return (
+
+   <Link to={`/coffee/${coffee.id}`}>
     <div className=" rounded-xl mb-10 text-[0.875rem]">
       <div className="">
         <div className="relative h-40 ">
@@ -57,6 +59,8 @@ const CoffeeCard = ({ coffee }) => {
         
       </div>
     </div>
+   
+   </Link>
   );
 };
 
