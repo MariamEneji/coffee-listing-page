@@ -13,7 +13,7 @@ const CoffeeCard = ({ coffee }) => {
 
   return (
 
-   <Link to={`/coffee/${coffee.id}`}>
+   <Link to={`/${coffee.id}`}>
     <div className=" rounded-xl mb-10 text-[0.875rem]">
       <div className="">
         <div className="relative h-40 ">

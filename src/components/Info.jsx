@@ -15,10 +15,10 @@ const Info = () => {
 
         const selectedCoffee = coffeeData.find(coffee => coffee.id === parseInt(id));
         setCoffeeInfo(selectedCoffee);
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false); 
       } catch (error) {
         console.error('Error fetching data:', error);
-        setLoading(false); // Set loading to false even if there's an error
+        setLoading(false); 
       }
     };
 

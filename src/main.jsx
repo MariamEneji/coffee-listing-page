@@ -14,7 +14,7 @@ export default function Main(){
 
       <Route path="/" element = {<App />}  />
 
-      <Route path="/coffee/:id" element={<Info/>} />
+      <Route path="/:id" element={<Info/>} />
 
 
 
